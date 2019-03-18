@@ -25,7 +25,7 @@ import pymysql
 def get_ppi(lcc):
     
     # Open database connection
-    db = pymysql.connect("menchelabdb.int.cemm.at","readonly","ra4Roh7ohdee","GenesGO")
+    db = pymysql.connect("<Server>","readonly","<Password>","GenesGO")
     # prepare a cursor object using cursor() method
     cursor = db.cursor()
 
