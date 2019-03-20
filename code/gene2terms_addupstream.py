@@ -25,7 +25,7 @@ import pymysql
 def get_ppi(lcc):
     
     # Open database connection
-    db = pymysql.connect("menchelabdb.int.cemm.at","readonly","ra4Roh7ohdee","GenesGO")
+    db = pymysql.connect("<MencheLabServer>","readonly","<MencheLabPW>","GenesGO")
     # prepare a cursor object using cursor() method
     cursor = db.cursor()
 
@@ -270,7 +270,7 @@ categories: Function, Process, Component
 """
 def loadgene2go(category = 'Function'):      
     
-    db = pymysql.connect("menchelabdb.int.cemm.at","readonly","ra4Roh7ohdee","GenesGO")
+    db = pymysql.connect("<MencheLabServer>","readonly","<MencheLabPW>","GenesGO")
     cursor = db.cursor()
     # Query to contruct GO Hierarchy
     #
@@ -319,7 +319,7 @@ function returns dict key: go value: list_go
 """
 def loadupstreams(category = 'Component'):      
     
-    db = pymysql.connect("menchelabdb.int.cemm.at","readonly","ra4Roh7ohdee","GenesGO")
+    db = pymysql.connect("<MencheLabServer>","readonly","<MencheLabPW>","GenesGO")
     cursor = db.cursor()
     # Query to contruct GO Hierarchy
     #
@@ -372,7 +372,7 @@ and returns nx.Graph
 """
 def Disease_ontology(graphtype, stream = 'up'):      
     
-    db = pymysql.connect("menchelabdb.int.cemm.at","readonly","ra4Roh7ohdee","Gene2Disease")
+    db = pymysql.connect("<MencheLabServer>","readonly","<MencheLabPW>","Gene2Disease")
     cursor = db.cursor()
     # Query to contruct GO Hierarchy
     #
@@ -452,7 +452,7 @@ returns dictionary gene: do
 """
 def diseaseID2name():      
     
-    db = pymysql.connect("menchelabdb.int.cemm.at","readonly","ra4Roh7ohdee","Gene2Disease")
+    db = pymysql.connect("<MencheLabServer>","readonly","<MencheLabPW>","Gene2Disease")
     cursor = db.cursor()
     # Query to contruct GO Hierarchy
     #
@@ -491,7 +491,7 @@ def loadgene2do():
 
     #new version is called gene2disease_all
 
-    db = pymysql.connect("menchelabdb.int.cemm.at","readonly","ra4Roh7ohdee","Gene2Disease")
+    db = pymysql.connect("<MencheLabServer>","readonly","<MencheLabServer>","Gene2Disease")
     cursor = db.cursor()
     # Query to contruct GO Hierarchy
     #
