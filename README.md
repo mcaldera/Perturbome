@@ -33,6 +33,7 @@ Code was written and execuded on a MacBookPro
 - CPU: Intel Core i5
 - Memory: 8GB
 - Graphics: Intel Iris Graphics 6100
+- MacOS: 10.14.3
 
 ### Installation instructions
 All python packages should be easily being installed via pip [https://pypi.org/project/pip/]  
@@ -46,7 +47,10 @@ Additional information and data can be downloaded under: https://sites.google.co
 
 Currently raw fluorescent images are not available, but should be online as soon as possible under: https://idr.openmicroscopy.org/
 
+## Code execution and run time
+The majority of code runs within several minutes. Only exception is the calculation of interactions [9_Calculate_Interactions.ipynb] that can take from several hours up to one day depending on the underlying system. 
+The final output of the individual analysis parts matches the output of the paper: "Mapping the perturbome network of cellular perturbations", with the only exception of some heuristic code sections. 
 
 ## Code description and help
-The majority of all code is written in jupyter notebook format, including detailed information in markdown about the purpose and result of the individual sections of code. 
+The majority of all code is written in jupyter notebook format, including detailed information in markdown about the purpose and result of the individual sections of code.  
 In case anything is not clear please send an email to: mcaldera@cemm.at
