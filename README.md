@@ -37,7 +37,7 @@ Code was written and execuded on a MacBookPro
 ### Installation instructions
 All python packages should be easily being installed via pip [https://pypi.org/project/pip/]  
 e.g. pip install <package_name>  
-Typically time to install all packages should be between 30min and 1h depending on the amount of previously installed packages.\\
+Typically time to install all packages should be between 30min and 1h depending on the amount of previously installed packages.
 
 
 ## Data
