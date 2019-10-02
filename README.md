@@ -45,7 +45,7 @@ Typically time to install all packages should be between 30min and 1h depending 
 All data to run the individual scripts should be within the respective /data/<NameOfAnalysis> folders. Note that some of the data is redundant (i.e. same data files in various /data/<NameOfAnalysis> folders. The reason for that is to keep each analysis modular and executable without the others.
 Additional information and data can be downloaded under: https://sites.google.com/view/menchelab/perturbome
 
-Currently raw fluorescent images are not available, but should be online as soon as possible under: https://idr.openmicroscopy.org/
+Raw fluorescent images are  available under: https://idr.openmicroscopy.org/ [idr0069]
 
 ## Code execution and run time
 The majority of code runs within several minutes. Only exception is the calculation of interactions [9_Calculate_Interactions.ipynb] that can take from several hours up to one day depending on the underlying system. 
